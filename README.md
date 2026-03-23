@@ -1,0 +1,47 @@
+# Mutual Distillation Driven Dual-Space Matching for Visible–Infrared Person Re-Identification
+
+Welcome to use the code from our paper **"Mutual Distillation Driven Dual-Space Matching for Visible–Infrared Person Re-Identification"**.
+
+
+
+##  Environment
+
+- Python 3.10+
+- PyTorch >= 2.0.1
+
+
+
+##  Dataset
+
+SYSU-MM01, RegDB, and LLCM
+
+##  Preprocessing
+
+Preprocess SYSU-MM01 and LLCM datasets for faster training:
+
+```bash
+python pre_process_sysu.py
+python pre_process_llcm.py
+```
+
+# Training and Testing
+
+We provide convenient shell scripts for training and testing. You can directly follow the scripts or run the commands manually.
+
+```bash
+# Using the script
+bash train.sh
+```
+
+##  Requirements
+we use single RTX4090 24G GPU for training and evaluation.
+
+##  Note
+Currently, we provide only preprocessing and training/testing scripts. The full model code will be released upon paper acceptance.
+
+
+## Acknowledgements
+The code is based on [DNS](https://github.com/Joey623/DNS), [CAJ](https://github.com/mangye16/Cross-Modal-Re-ID-baseline/tree/master/ICCV21_CAJ), and [DEEN](https://github.com/ZYK100/LLCM). We thank the authors for open-sourcing their code.
+
+## Contact
+If you have any questions, don't hesitate to contact me via dongcanliu@stu.cqut.edu.cn.
